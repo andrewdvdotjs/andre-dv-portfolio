@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <!-- Icones  -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!--Custom css-->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Portifólio</title>
+</head>
+    <body>
+    <!--Header (perfil)-->
+    <header class="profile container">
+        <!--Dark mode button--->
+        <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+        <div class="profile__container grid">
+            <div class="profile__data">
+                <div class="profile__border">
+                    <div class="profile__perfil">
+                        <img src="https://avatars.githubusercontent.com/u/91804117?s=400&u=34887f0ade733b5cdbcab2be3630c8c7a76a6eaa&v=4" alt="Imagem de perfil">
+                    </div>
+                </div>
+
+                <h2 class="profile__name">André Duarte Vieira</h2>
+                <h3 class="profile__profession">Software Developer</h3>
+
+                <ul class="profile__social">
+                    <a href="https://www.instagram.com/andre.dv123/" target="_blank" class="profile__social-link">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/andrewdvdotjs/" target="_blank" class="profile__social-link">
+                        <i class="ri-linkedin-box-line"></i>
+                    </a>
+                    <a href="https://github.com/andrewdvdotjs" target="_blank" class="profile__social-link">
+                        <i class="ri-github-line"></i>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="profile__info grid">
+                <div class="profile__info-group">
+                    <h3 class="profile__info-number">1</h3>
+                    <p class="profile__info-description"> Ano de <br> experiência </p>
+                </div>
+
+                <div class="profile__info-group">
+                    <h3 class="profile__info-number">+20</h3>
+                    <p class="profile__info-description">Projetos <br> completos</p>
+                </div>
+            </div>
+
+            <div class="profile__buttons">
+                <!--curriculo aqui-->
+                <a download="curriculo-andre-dv" href="./curriculum/curriculo-estagio2.pdf" class="button">
+                    Baixar currículo<i class="ri-download-line"></i>
+                </a>
+
+                <div class="profile__buttons-small">
+                    <!--Api whatsapp-->
+                    <a href="https://api.whatsapp.com/send?phone=5521972226721&text=Heyy, Andre. tudo bem??"
+                       target="_blank" class="button button__small button__gray">
+                        <i class="ri-whatsapp-line"></i>
+                    </a>
+                    <!--use o mailto--->
+                    <a href="mailto:andre.duarte.vieira06@protonmail.com" target="_blank" class="button button__small button__gray">
+                        <i class="ri-mail-send-line"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </header>       <!--Fim header-->
+
+    <main class="main"> <!--Inicio main-->
+        <section class="filters container"> <!--Section inicio--->
+
+                <!--Filtra as abas--->
+                <ul class="filters__content">
+                    <button class="filters__button" data-target="#projects">
+                        Projetos
+                    </button>
+
+                    <button class="filters__button" data-target="#skills">
+                        Habilidades
+                    </button>
+                </ul>
+
+            <div class="filters__sections">
+                <!--=============== PROJETOS ===============-->
+                <div class="projects__content grid" data-content id="projects">
+                    <article class="projects__card">
+                        <!-- Apenas imagens retangulares (Ex: 600 x 400, 1000 x 800, 1200 x 1000, etc) -->
+                        <img src="./img/tinder-clone.png" alt="" class="projects__img">
+
+                        <div class="projects__modal">
+                            <div>
+                                <span class="projects__subtitle">React</span>
+                                <h3 class="projects__title">Tinder Clone - Front end</h3>
+                                <a href="#" class="projects__button button button__small">
+                                    <i class="ri-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="projects__card">
+                        <img src="./img/museu.png" alt="" class="projects__img">
+
+                        <div class="projects__modal">
+                            <div>
+                                <span class="projects__subtitle">Museu nacional</span>
+                                <h3 class="projects__title">Aplicação Front end</h3>
+                                <a href="https://github.com/andrewdvdotjs/nat-museum" class="projects__button button button__small">
+                                    <i class="ri-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="projects__card">
+                        <img src="./img/pokedex.png" alt="" class="projects__img">
+
+                        <div class="projects__modal">
+                            <div>
+                                <span class="projects__subtitle">Pokédex</span>
+                                <h3 class="projects__title">Aplicação front end</h3>
+                                <a href="https://github.com/andrewdvdotjs/pokedex" class="projects__button button button__small">
+                                    <i class="ri-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="projects__card">
+                        <img src="./img/movieture.png" alt="" class="projects__img">
+
+                        <div class="projects__modal">
+                            <div>
+                                <span class="projects__subtitle">Movieture</span>
+                                <h3 class="projects__title">Aplicação front end - catalogo de filmes</h3>
+                                <a href="https://github.com/andrewdvdotjs/movieture" class="projects__button button button__small">
+                                    <i class="ri-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="projects__card">
+                        <img src="./img/finans.png" alt="" class="projects__img">
+
+                        <div class="projects__modal">
+                            <div>
+                                <span class="projects__subtitle">Finans</span>
+                                <h3 class="projects__title">Bootsrap - aplicação front end</h3>
+                                <a href="https://github.com/andrewdvdotjs/finans-app" class="projects__button button button__small">
+                                    <i class="ri-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="projects__card">
+                        <img src="./img/chale-hotel.png" alt="" class="projects__img">
+
+                        <div class="projects__modal">
+                            <div>
+                                <span class="projects__subtitle">Chalé Hotel</span>
+                                <h3 class="projects__title">Aplicação Front end</h3>
+                                <a href="https://github.com/andrewdvdotjs/chale-hotel-html" class="projects__button button button__small">
+                                    <i class="ri-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+<!--                    teste, depois daqui pode apagar os articles-->
+                    <article class="projects__card">
+                        <img src="./img/anabela.png" alt="" class="projects__img">
+
+                        <div class="projects__modal">
+                            <div>
+                                <span class="projects__subtitle">Modelo Anna Bella</span>
+                                <h3 class="projects__title">Aplicação Front end</h3>
+                                <a href="https://github.com/andrewdvdotjs/annabella-project" class="projects__button button button__small">
+                                    <i class="ri-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="projects__card">
+                        <img src="./img/bookstore.png" alt="" class="projects__img">
+
+                        <div class="projects__modal">
+                            <div>
+                                <span class="projects__subtitle">Bookstore</span>
+                                <h3 class="projects__title">Aplicação Front end - Ecommerce</h3>
+                                <a href="https://github.com/andrewdvdotjs/ecommerce-livros" class="projects__button button button__small">
+                                    <i class="ri-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="projects__card">
+                        <img src="./img/news.png" alt="" class="projects__img">
+
+                        <div class="projects__modal">
+                            <div>
+                                <span class="projects__subtitle">Síte de notícias</span>
+                                <h3 class="projects__title">Aplicação Front end</h3>
+                                <a href="https://github.com/andrewdvdotjs/fuzzy-pancake-news" class="projects__button button button__small">
+                                    <i class="ri-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="projects__card">
+                        <img src="./img/spotify.png" alt="" class="projects__img">
+
+                        <div class="projects__modal">
+                            <div>
+                                <span class="projects__subtitle">Spotify Bootstrap</span>
+                                <h3 class="projects__title">Aplicação Front end</h3>
+                                <a href="https://github.com/andrewdvdotjs/spotify-frontend-clone" class="projects__button button button__small">
+                                    <i class="ri-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="projects__card">
+                        <img src="./img/badge.png" alt="" class="projects__img">
+
+                        <div class="projects__modal">
+                            <div>
+                                <span class="projects__subtitle">Virtual badge</span>
+                                <h3 class="projects__title">Aplicação Front end</h3>
+                                <a href="https://github.com/andrewdvdotjs/badge-nlw" class="projects__button button button__small">
+                                    <i class="ri-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="projects__card">
+                        <img src="./img/formlogin.png" alt="" class="projects__img">
+
+                        <div class="projects__modal">
+                            <div>
+                                <span class="projects__subtitle">Login form</span>
+                                <h3 class="projects__title">Aplicação Front end</h3>
+                                <a href="#" class="projects__button button button__small">
+                                    <i class="ri-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+
+
+                </div>
+
+                <!--=============== SKILLS ===============-->
+                <div class="skills__content grid" data-content id="skills">
+                    <div class="skills__area">
+                        <h3 class="skills__title">Frontend Developer</h3>
+
+                        <div class="skills__box">
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">HTML</h3>
+                                        <span class="skills__level">Avançado</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">CSS</h3>
+                                        <span class="skills__level">Avançado</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">JavaScript</h3>
+                                        <span class="skills__level">Intermediário</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">React</h3>
+                                        <span class="skills__level">Básico</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">Bootstrap</h3>
+                                        <span class="skills__level">Intermediário</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">Git</h3>
+                                        <span class="skills__level">Básico</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills__area">
+                        <h3 class="skills__title">Noções de outras tecnologias e frameworks</h3>
+
+                        <div class="skills__box">
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">PHP</h3>
+                                        <span class="skills__level">Básico</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">MySQL</h3>
+                                        <span class="skills__level">Básico</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">Python</h3>
+                                        <span class="skills__level">Básico</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">Node Js</h3>
+                                        <span class="skills__level">Básico</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>          <!--Section termina aqui--->
+    </main>                 <!--Main termina aqui--->
+
+    <footer class="footer container">   <!--rodapé inicio-->
+        <span class="footer__copy">
+            André D.V
+            <br>
+             <a href="https://github.com/andrewdvdotjs" target="_blank" class="profile__social-link">
+                        <i class="ri-github-line"></i>
+                    </a>
+        </span>
+
+
+    </footer>
+
+
+    <script src="./js/scrollrevealmin.js"></script>    <!--SCROLL REVEAl--->
+                    <!--Javascript principal--->
+    <script src="./js/main.js"></script>
+    </body>
+</html>
+
+
+<!--Terminamos, só falta transformar a nossa foto de perfil em png e talvez aumentar um pouco-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
